@@ -2,7 +2,7 @@ import axios from "axios";
 
 abstract class HttpService {
 
-    protected async fetchDataFromAPI<Type>(url: string): Promise<Response> {
+    protected async fetchDataFromAPI(url: string): Promise<Response> {
         return await axios(url);
     }
 
