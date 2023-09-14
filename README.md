@@ -3,7 +3,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 This project Covers several software and web concepts:
-Dom, css, OOP, Singlton and dependency injection with React context, promise, async await, caching, share state between components
+Dom, css, OOP, Singlton and dependency injection with React context, promise, async await, caching, share state between components,
+static typing with typescript.
 
 ## Available Scripts
 
