@@ -1,10 +1,10 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Food Recipes Web App Using React 
 
 This project Covers several software and web concepts:
 Dom, css, OOP, Singlton and dependency injection with React context, promise, async await, caching, share state between components,
 static typing and generics with typescript.
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
