@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This project Covers several software and web concepts:
 Dom, css, OOP, Singlton and dependency injection with React context, promise, async await, caching, share state between components,
-static typing with typescript.
+static typing and generics with typescript.
 
 ## Available Scripts
 
