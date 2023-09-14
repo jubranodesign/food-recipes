@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Menu from './components/Menu/Menu';
+import ListRecipes from './components/ListRecipes/ListRecipes';
+import IFood from './model/IFood';
+import IRecipe from './model/IRecipe';
+import FoodService from './services/http/FoodService';
+import AppContext from './Contexts/AppContext';
+import { useQuery } from '@tanstack/react-query';
 
 function App() {
+  const [recipe, setRecipe] = useState<IRecipe[]>([]);
+  const services = {
+    foodService: new FoodService()
+  };
+  const { data: foods } = useQuery(['foods'], () => services.foodService.getAllFoodCategories<IFood[]>());
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppContext.Provider value={services}>
+      <div id="App">
+        <Menu categories={foods} onRecipe={setRecipe} />
+        <ListRecipes recipe={recipe} />
+      </div>
+    </AppContext.Provider>
   );
+
 }
 
 export default App;
