@@ -1,7 +1,7 @@
 # Food Recipes Web App Using React 
 
 This project covers several software and web concepts:
-html, css, dom, oop, singlton and dependency injection with react context, promise, async await, caching with react query, share state between components,
+html, css, dom, oop, singlton and dependency injection with react context, promise, async await, caching with react query, share state between components with Props,
 static typing and generics with typescript.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
